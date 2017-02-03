@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<title>Paint</title>
+  	<meta charset="utf-8"/>
+  	<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+  	<link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/powerange.min.css">
+  </head> 
+  <body>
+  	<div id="top-bar" class="clearfix">
+  		<h1 id="logo">Paint</h1>
+  		<div class="btn-container">
+        <button class="btn" id="clear">Clear</button>
+  			<button class="btn" id="undo">Undo</button>
+  		</div>
+  	</div>
+  	<div id="content">
+  		<div id="function" class="clearfix">
+  			<div class="field field-1">
+  				<h3 class="field-title">Chọn màu</h3>
+  				<div class="field-body">
+  					<div id="colorSelector"><div style="background-color: #000000;"></div></div>
+  				</div>
+  			</div>
+
+        <div class="field field-2">
+          <h3 class="field-title">Độ rộng của bút</h3>
+          <div class="field-body">
+            <input type="text" class="js-range" style="display: none;">
+            <div id="js-display-callback" class="display-box">45</div>
+          </div>
+        </div>
+      </div>
+  			
+  	<div id="paint-container">
+       <canvas id="canvas" width="1200px" height="500px" style="border: #dddddd solid 3px;cursor: crosshair;"></canvas>
+    </div>
+  		</div>
+  </body>
+  <script type="text/javascript" src="js/jquery.js" ></script>
+  <script type="text/javascript" src="js/canvas.js" ></script>
+  <script type="text/javascript" src="js/colorpicker.js"></script>
+  <script type="text/javascript" src="js/powerange.min.js"></script>
+</html>  
